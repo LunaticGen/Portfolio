@@ -237,6 +237,7 @@ img{
 }
 
 .about_subtitle{
+    margin-top: var(--mb-2);
     margin-bottom: var(--mb-2);
 }
 
@@ -375,4 +376,102 @@ img{
     font-size: 1.5rem;
     color: var(--third-color);
     margin: 0 var(--mb-2)
+}
+
+/* ===MEDIA QUERIES=== */
+@media screen and (min-width:768px){
+    body{
+        margin: 0;
+    }
+    .section{
+        padding-top: 3rem;
+    }
+    .section-title{
+        margin-bottom: var(--mb-4);
+    }
+    .section-title::after{
+        width: 80px;
+        top: 3rem;
+    }
+    .nav{
+        height: calc(var(--header-height)+5rem);
+    }
+    .nav_list{
+        display: flex;
+        padding-top: 0;
+    }
+    .nav_item{
+        margin-left: var(--mb-4);
+        margin-bottom: 0;
+    }
+    .nav_toggle{
+        display: none;
+    }
+    .nav_link{
+        color: var(--second-color);
+    }
+    .home{
+        height: 100vh;
+    }
+    .home_data{
+        align-self: flex-start;
+    }
+    .home_social{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+    .home_social-icon{
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+    .home_img{
+        margin: auto;
+        width: 350px;
+    }
+    .skills_data{
+        padding: 1.5rem 2rem;
+    }
+    .skills_img{
+        width: 60%;
+        height: 450px;
+        margin: auto;
+    }
+    .about_container {
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: initial;
+    }
+    .about_img img{
+        width: 300px;
+        height: 300px;
+    }
+    .work_container{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+    }
+    .contact_form{
+        width: 500px;
+        margin: auto;
+    }
+    .contact_container{
+        text-align: center;
+        justify-content: center;
+    }
+    .contact_input{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    .section-title{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
 }

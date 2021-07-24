@@ -23,3 +23,5 @@ function linkAction(){
     navLink.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/* ====SCROLL REVEAL ANIMATION==== */
