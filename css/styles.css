@@ -203,6 +203,9 @@ img{
 .home_title-color{
     color: var(--first-color);
 }
+.home_img{
+    margin-bottom: 2rem;
+}
 .home_social{
     display: flex;
     justify-content: space-evenly;
@@ -337,6 +340,12 @@ img{
     display: block;
 }
 
+.work-box h3 {
+    color: var(--third-color);
+}
+.work-box p{
+    color: var(--third-color);
+}
 /* ===CONTACT=== */
 .contact_input{
     width: 100%;
